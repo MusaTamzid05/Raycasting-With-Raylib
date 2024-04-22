@@ -9,6 +9,7 @@ SET(SOURCE_FILES
     src/main.cpp
     src/app.cpp
     src/top_down_view.cpp
+    src/data_types.cpp
     )
 
 

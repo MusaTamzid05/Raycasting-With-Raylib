@@ -14,6 +14,7 @@ App::App() {
             WINDOW_HEIGHT
             );
 
+
 }
 
 
@@ -37,6 +38,7 @@ void App::run() {
 void App::render() {
     BeginDrawing();
         ClearBackground(Color{68, 93, 72});
+        top_down_view->render();
 
     EndDrawing();
 

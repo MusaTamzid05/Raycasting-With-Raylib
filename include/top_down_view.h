@@ -2,6 +2,8 @@
 #define TOP_DOWN_VIEW_H
 
 #include <string>
+#include <vector>
+#include "data_types.h"
 
 struct TopDownView {
     TopDownView(
@@ -16,6 +18,9 @@ struct TopDownView {
 
     int width;
     int height;
+
+
+    std::vector<MapRectData> rect_list;
 
 
 };
