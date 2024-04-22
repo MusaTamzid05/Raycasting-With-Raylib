@@ -1,0 +1,12 @@
+[
+{
+  "directory": "/home/musa/c++_pro/recording/raycast_recording/build",
+  "command": "/usr/bin/c++  -I/home/musa/c++_pro/recording/raycast_recording/include  -std=c++11 -g -o CMakeFiles/game.dir/src/main.cpp.o -c /home/musa/c++_pro/recording/raycast_recording/src/main.cpp",
+  "file": "/home/musa/c++_pro/recording/raycast_recording/src/main.cpp"
+},
+{
+  "directory": "/home/musa/c++_pro/recording/raycast_recording/build",
+  "command": "/usr/bin/c++  -I/home/musa/c++_pro/recording/raycast_recording/include  -std=c++11 -g -o CMakeFiles/game.dir/src/app.cpp.o -c /home/musa/c++_pro/recording/raycast_recording/src/app.cpp",
+  "file": "/home/musa/c++_pro/recording/raycast_recording/src/app.cpp"
+}
+]

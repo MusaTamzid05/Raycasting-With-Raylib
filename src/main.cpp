@@ -1,7 +1,8 @@
-#include <iostream>
+#include "app.h"
 
 
 int main(int argc, char** argv) {
-    std::cout << "Raylib\n";
+    App app;
+    app.run();
     return 0;
 }
