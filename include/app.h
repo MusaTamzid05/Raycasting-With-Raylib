@@ -1,6 +1,7 @@
 #ifndef APP_H
 #define APP_H
 
+struct TopDownView;
 
 struct App {
     App();
@@ -12,6 +13,8 @@ struct App {
     void render();
     void update();
     void handle_event();
+
+    TopDownView* top_down_view;
 };
 
 
