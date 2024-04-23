@@ -16,6 +16,8 @@ struct Player {
     void left();
     void right();
 
+    float get_current_delta_speed() const;
+
 
 
 

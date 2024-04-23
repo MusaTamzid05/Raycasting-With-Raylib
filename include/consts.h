@@ -13,5 +13,6 @@ const int RECT_COUNT_PER_ROW = 16;
 
 const int PLAYER_WIDTH = 16;
 const int PLAYER_HEIGHT = 16;
+const int PLAYER_SPEED = 100;
 
 #endif

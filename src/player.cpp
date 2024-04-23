@@ -25,18 +25,24 @@ void Player::render() const {
 }
 
 void Player::up() {
-    pos_y -= 1;
+    pos_y -= get_current_delta_speed();
 }
 
 
 void Player::down() {
-    pos_y += 1;
+    pos_y += get_current_delta_speed();
 }
 
 
 void Player::left() {
-    pos_x -= 1;
+    pos_x -= get_current_delta_speed();
 }
 void Player::right() {
-    pos_x += 1;
+    pos_x += get_current_delta_speed();
+}
+
+
+float Player::get_current_delta_speed() const {
+    return PLAYER_SPEED * GetFrameTime();
+
 }
