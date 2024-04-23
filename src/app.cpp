@@ -1,6 +1,7 @@
 #include "app.h"
 #include "consts.h"
 #include "top_down_view.h"
+#include "player.h"
 #include <raylib.h>
 
 
@@ -14,11 +15,18 @@ App::App() {
             WINDOW_HEIGHT
             );
 
+    player = new Player(
+            WINDOW_WIDTH - 100,
+            WINDOW_HEIGHT - 100
+            );
+
 
 }
 
 
 App::~App() {
+    delete player;
+    delete top_down_view;
 
 }
 
@@ -39,6 +47,7 @@ void App::render() {
     BeginDrawing();
         ClearBackground(Color{68, 93, 72});
         top_down_view->render();
+        player->render();
 
     EndDrawing();
 

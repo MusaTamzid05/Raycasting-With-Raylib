@@ -10,6 +10,7 @@ SET(SOURCE_FILES
     src/app.cpp
     src/top_down_view.cpp
     src/data_types.cpp
+    src/player.cpp
     )
 
 

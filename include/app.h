@@ -2,6 +2,7 @@
 #define APP_H
 
 struct TopDownView;
+struct Player;
 
 struct App {
     App();
@@ -15,6 +16,7 @@ struct App {
     void handle_event();
 
     TopDownView* top_down_view;
+    Player* player;
 };
 
 
