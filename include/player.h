@@ -11,6 +11,11 @@ struct Player {
     int pos_x;
     int pos_y;
 
+    void up();
+    void down();
+    void left();
+    void right();
+
 
 
 

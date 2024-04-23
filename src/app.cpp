@@ -55,6 +55,18 @@ void App::render() {
 
 void App::handle_event() {
 
+    if(IsKeyDown(KEY_W))
+        player->up();
+
+    if(IsKeyDown(KEY_S))
+        player->down();
+
+    if(IsKeyDown(KEY_A))
+        player->left();
+
+    if(IsKeyDown(KEY_D))
+        player->right();
+
 }
 
 

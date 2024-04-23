@@ -23,3 +23,20 @@ void Player::render() const {
             );
 
 }
+
+void Player::up() {
+    pos_y -= 1;
+}
+
+
+void Player::down() {
+    pos_y += 1;
+}
+
+
+void Player::left() {
+    pos_x -= 1;
+}
+void Player::right() {
+    pos_x += 1;
+}
