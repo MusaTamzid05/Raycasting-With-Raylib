@@ -27,17 +27,12 @@ struct RayData {
 
 struct WallData {
 
-    WallData(
-            int x,
-            int y,
-            int width,
-            int height
-            );
+    WallData(int index, float height);
 
     int x;
     int y;
-    int width;
-    int height;
+    float width;
+    float height;
 
 
 };

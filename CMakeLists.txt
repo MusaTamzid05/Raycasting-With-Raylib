@@ -11,6 +11,7 @@ SET(SOURCE_FILES
     src/top_down_view.cpp
     src/data_types.cpp
     src/player.cpp
+    src/first_person_view.cpp
     )
 
 

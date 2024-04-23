@@ -1,4 +1,5 @@
 #include "data_types.h"
+#include "consts.h"
 
 
 
@@ -27,10 +28,13 @@ RayData::RayData(int x, int y):
 
 
 WallData::WallData(
-    int x,
-    int y,
-    int width,
-    int height
+    int index,
+    float height
     ) {
+
+    x = TOP_DOWN_WIDTH + (TOP_DOWN_WIDTH - index);
+    y = TOP_DOWN_HEIGHT / 2.0f - height / 2.0f;
+    width = 1.0f;
+    this->height = height;
 
 }

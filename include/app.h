@@ -3,6 +3,7 @@
 
 struct TopDownView;
 struct Player;
+struct FirstPersonView;
 
 struct App {
     App();
@@ -17,6 +18,7 @@ struct App {
 
     TopDownView* top_down_view;
     Player* player;
+    FirstPersonView* first_person_view;
 };
 
 

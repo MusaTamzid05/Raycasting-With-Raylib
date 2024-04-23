@@ -63,6 +63,9 @@ void Player::update_ray() {
             char value = top_down_view->rect_list[row_index][col_index].value;
 
             if(value != ' ') {
+                wall_list_data.push_back(
+                        WallData(i, TOP_DOWN_HEIGHT / r)
+                        );
                 break;
             }
 
