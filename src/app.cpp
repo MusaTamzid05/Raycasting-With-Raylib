@@ -17,7 +17,8 @@ App::App() {
 
     player = new Player(
             WINDOW_WIDTH - 100,
-            WINDOW_HEIGHT - 100
+            WINDOW_HEIGHT - 100,
+            top_down_view
             );
 
 

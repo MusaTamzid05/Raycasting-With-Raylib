@@ -19,8 +19,11 @@ struct TopDownView {
     int width;
     int height;
 
+    int cell_width;
+    int cell_height ;
 
-    std::vector<MapRectData> rect_list;
+
+    std::vector<std::vector<MapRectData>> rect_list;
 
 
 };
