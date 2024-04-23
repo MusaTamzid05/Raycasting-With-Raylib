@@ -14,7 +14,7 @@ struct TopDownView {
 
     virtual ~TopDownView();
 
-    void render();
+    void render() const;
 
     int width;
     int height;

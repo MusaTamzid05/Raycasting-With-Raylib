@@ -70,7 +70,7 @@ TopDownView::~TopDownView() {
 
 }
 
-void TopDownView::render() {
+void TopDownView::render() const {
     for(MapRectData rect_data : rect_list) {
         if(!rect_data.active)
             continue;
