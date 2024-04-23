@@ -44,12 +44,14 @@ void Player::update_ray() {
     int cell_width = top_down_view->cell_width;
     int cell_height = top_down_view->cell_height;
 
+    float center_x = pos_x + (PLAYER_WIDTH / 2.0f);
+
     
     for(int i = 0; i < top_down_view->width; i += 1) {
         float angle = PLAYER_FOV_STARTING_ANGLE - FOV / 2 + FOV * i / (top_down_view->width);
 
         for(float r = 0.0f; r < RAY_DISTANCE; r += 1.0f) {
-            int x = int(pos_x + r * cos(angle));
+            int x = int(center_x + r * cos(angle));
             int y = int(pos_y - r * sin(angle));
 
             int col_index = x / cell_width;
