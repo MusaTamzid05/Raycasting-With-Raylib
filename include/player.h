@@ -8,7 +8,10 @@ struct TopDownView;
 
 
 struct Player {
-    Player(int x, int y, TopDownView* top_down_view);
+    Player(
+            int x,
+            int y,
+            TopDownView* top_down_view);
     virtual ~Player();
 
     void render() const;
@@ -16,6 +19,9 @@ struct Player {
 
     int pos_x;
     int pos_y;
+
+    int max_x;
+    int max_y;
 
     void up();
     void down();

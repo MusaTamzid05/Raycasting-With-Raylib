@@ -9,6 +9,8 @@ Player::Player(int x, int y, TopDownView* top_down_view):
     pos_x(x),
     pos_y(y),
     top_down_view(top_down_view) {
+        max_x = top_down_view->width;
+        max_y = top_down_view->height;
 
         update_ray();
 
@@ -77,22 +79,33 @@ void Player::update_ray() {
 }
 
 void Player::up() {
+    if(pos_y <= 0)
+        return;
+
     pos_y -= get_current_delta_speed();
     update_ray();
 }
 
 
 void Player::down() {
+    if(pos_y >= max_y - PLAYER_HEIGHT)
+        return;
+
     pos_y += get_current_delta_speed();
     update_ray();
 }
 
 
 void Player::left() {
+    if(pos_x <= 0)
+        return;
     pos_x -= get_current_delta_speed();
     update_ray();
 }
 void Player::right() {
+    if(pos_x >=  max_x - PLAYER_WIDTH)
+        return;
+
     pos_x += get_current_delta_speed();
     update_ray();
 }
