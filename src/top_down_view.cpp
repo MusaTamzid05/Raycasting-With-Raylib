@@ -7,12 +7,8 @@
 
 
 TopDownView::TopDownView(
-        const std::string& map_path,
-        int width,
-        int height
-        ):
-    width(width),
-    height(height) {
+        const std::string& map_path
+        ) {
 
         std::ifstream input_file(map_path);
 
@@ -25,8 +21,8 @@ TopDownView::TopDownView(
         int pos_x = 0;
         int pos_y = 0;
 
-        cell_width = width / RECT_COUNT_PER_ROW;
-        cell_height = height / RECT_COUNT_PER_ROW;
+        cell_width = TOP_DOWN_WIDTH / RECT_COUNT_PER_ROW;
+        cell_height = TOP_DOWN_HEIGHT / RECT_COUNT_PER_ROW;
 
 
         while(input_file) {

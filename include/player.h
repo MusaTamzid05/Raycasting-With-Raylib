@@ -32,6 +32,7 @@ struct Player {
     TopDownView* top_down_view;
 
     std::vector<RayData> ray_data_list;
+    std::vector<WallData> wall_list_data;
 
 
 

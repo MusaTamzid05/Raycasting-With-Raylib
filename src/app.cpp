@@ -10,14 +10,12 @@ App::App() {
     SetTargetFPS(60);
 
     top_down_view = new TopDownView(
-            "../resources/map1.txt",
-            WINDOW_WIDTH / 2,
-            WINDOW_HEIGHT
+            "../resources/map1.txt"
             );
 
     player = new Player(
-            top_down_view->width - 100,
-            top_down_view->height - 100,
+            TOP_DOWN_WIDTH - 100,
+            TOP_DOWN_HEIGHT - 100,
             top_down_view
             );
 

@@ -24,3 +24,13 @@ MapRectData::MapRectData(
 RayData::RayData(int x, int y):
     x(x),
     y(y) {}
+
+
+WallData::WallData(
+    int x,
+    int y,
+    int width,
+    int height
+    ) {
+
+}

@@ -7,17 +7,13 @@
 
 struct TopDownView {
     TopDownView(
-            const std::string& map_path,
-            int width,
-            int height
+            const std::string& map_path
             );
 
     virtual ~TopDownView();
 
     void render() const;
 
-    int width;
-    int height;
 
     int cell_width;
     int cell_height ;

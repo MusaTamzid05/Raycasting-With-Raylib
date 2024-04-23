@@ -9,8 +9,8 @@ Player::Player(int x, int y, TopDownView* top_down_view):
     pos_x(x),
     pos_y(y),
     top_down_view(top_down_view) {
-        max_x = top_down_view->width;
-        max_y = top_down_view->height;
+        max_x = TOP_DOWN_WIDTH;
+        max_y = TOP_DOWN_HEIGHT;
 
         update_ray();
 
@@ -41,6 +41,7 @@ void Player::render() const {
 void Player::update_ray() {
 
     ray_data_list.clear();
+    wall_list_data.clear();
 
 
     int cell_width = top_down_view->cell_width;
@@ -49,8 +50,8 @@ void Player::update_ray() {
     float center_x = pos_x + (PLAYER_WIDTH / 2.0f);
 
     
-    for(int i = 0; i < top_down_view->width; i += 1) {
-        float angle = PLAYER_FOV_STARTING_ANGLE - FOV / 2 + FOV * i / (top_down_view->width);
+    for(int i = 0; i < TOP_DOWN_WIDTH; i += 1) {
+        float angle = PLAYER_FOV_STARTING_ANGLE - FOV / 2 + FOV * i / TOP_DOWN_WIDTH;
 
         for(float r = 0.0f; r < RAY_DISTANCE; r += 1.0f) {
             int x = int(center_x + r * cos(angle));
