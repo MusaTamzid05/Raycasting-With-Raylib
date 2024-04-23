@@ -11,13 +11,13 @@ App::App() {
 
     top_down_view = new TopDownView(
             "../resources/map1.txt",
-            WINDOW_WIDTH,
+            WINDOW_WIDTH / 2,
             WINDOW_HEIGHT
             );
 
     player = new Player(
-            WINDOW_WIDTH - 100,
-            WINDOW_HEIGHT - 100,
+            top_down_view->width - 100,
+            top_down_view->height - 100,
             top_down_view
             );
 
